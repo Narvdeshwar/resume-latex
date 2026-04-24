@@ -1,0 +1,134 @@
+\documentclass[9pt,a4paper]{article}
+
+\usepackage[top=0.22in, bottom=0.22in, left=0.42in, right=0.42in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+\definecolor{myblue}{RGB}{0, 70, 160}
+
+\hypersetup{
+colorlinks=true,
+linkcolor=myblue,
+urlcolor=myblue,
+citecolor=myblue
+}
+
+% Section formatting aur spacing control
+\titleformat{\section}{\normalsize\bfseries\color{myblue}}{}{0em}{}
+\titlespacing*{\section}{0pt}{1pt}{2pt}
+
+% Paragraph aur list spacing settings
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\parindent}{0pt} % HORIZONTAL SPACING FIX: Ye text ko left-aligned rakhega
+
+\setlist[itemize]{leftmargin=1.1em,label=\textbullet,itemsep=0pt,topsep=0pt,parsep=0pt}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+% HEADER
+\begin{center}
+{\LARGE\textbf{NARVDESHWAR}} \\[2pt]
+{\small Backend Engineer (Golang | Distributed Systems)} \\[2pt]
+{\small
+\href{tel:8787205784}{8787205784} \textbar{}
+\href{mailto:narvdeshwar02.oct@gmail.com}{narvdeshwar02.oct@gmail.com} \textbar{}
+New Delhi, India \textbar{}
+\href{https://github.com/Narvdeshwar}{GitHub} \textbar{}
+\href{https://linkedin.com/in/narvdeshwar}{LinkedIn}
+}
+\end{center}
+
+\vspace{3pt}
+{\color{myblue}\hrule}
+
+% SUMMARY
+\section*{Summary}
+Backend engineer with 3+ years building high-performance distributed systems in Go. Specialized in concurrent processing pipelines, real-time telemetry platforms, cloud-native microservices, and LLM/RAG integrations. Built production systems processing millions of IoT events, achieved 98\% OCR accuracy, reduced query latency by 60\%, and cut OpenAI API calls by 70\% via Redis caching.
+
+\vspace{3pt}
+{\color{myblue}\hrule}
+
+% EXPERIENCE
+\section*{Experience}
+
+\textbf{JSPARK.AI} \hfill Noida, India
+
+\textit{Software Developer} \hfill Nov 2024 -- Present {\small\color{gray}(payroll: Xenelsoft Technologies Nov 2024 -- Feb 2026; JSPARK.AI direct Feb 2026 -- Present)}
+
+\begin{itemize}
+\item Integrated GPT-4o-mini via OpenAI API into production RAG pipeline for natural language querying over IoT telemetry using pgvector HNSW index and SSE streaming.
+\item Architected multi-tenant IoT monitoring SaaS platform in Go + React, ingesting real-time telemetry from smart infrastructure devices.
+\item Designed PostgreSQL + Redis caching architecture achieving \textbf{sub-50ms p99 query latency} via indexed partitioning, connection pooling, and cache-aside strategy.
+\item Built analytics dashboards for \textbf{National Crime Records Bureau (NCRB)} enabling large-scale crime data visualization for government decision systems.
+\end{itemize}
+
+\vspace{2pt}
+
+\textbf{GlobalLogic Inc.} \hfill Gurugram, India
+
+\textit{Software Engineer} \hfill Dec 2022 -- Nov 2024
+
+\begin{itemize}
+\item Designed distributed OTP authentication service using Go, Redis TTL, and JWT handling \textbf{10K+ daily requests} with zero token leakage.
+\item Reduced database authentication load by \textbf{65\%} via Redis caching layer.
+\item Built document intelligence pipeline using Go + Google Cloud Vision OCR achieving \textbf{98\% extraction accuracy} across 10,000+ documents.
+\item Implemented dynamic PDF highlighting and navigation in React improving document review productivity by \textbf{60\%}.
+\end{itemize}
+
+\vspace{3pt}
+{\color{myblue}\hrule}
+
+% PROJECTS
+\section*{Projects}
+
+\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+\textbf{IoT Telemetry RAG Insight Engine} \href{https://github.com/Narvdeshwar/IOT-rag}{{\small\color{myblue}[GitHub]}} & \textit{Go, PostgreSQL, pgvector, Redis, OpenAI, Gin, Docker}
+\end{tabular*}
+
+\begin{itemize}
+\item Built production RAG system for natural language queries over IoT telemetry with GPT-4o-mini SSE streaming responses.
+\item Goroutine worker pool ingestion pipeline with batch OpenAI embeddings; 1000+ chunks in PostgreSQL HNSW index for \textbf{sub-50ms} vector retrieval.
+\item Redis cache-aside layer (5-min TTL) reducing OpenAI API calls by \textbf{70\%}; validated with unit, integration, and benchmark tests.
+\end{itemize}
+
+\vspace{2pt}
+
+\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+\textbf{Concurrent Log Processing Pipeline} \href{https://github.com/Narvdeshwar/go-logstreamer}{{\small\color{myblue}[GitHub]}} & \textit{Go, Goroutines, Channels, Worker Pools, pprof}
+\end{tabular*}
+
+\begin{itemize}
+\item Engineered concurrent log processor handling \textbf{50M lines (1GB) in ~52s} at ~1M lines/sec; lock-free aggregation via atomic counters; bottlenecks eliminated with pprof.
+\end{itemize}
+
+\vspace{3pt}
+{\color{myblue}\hrule}
+
+% SKILLS
+\section*{Skills}
+
+\begin{tabular}{p{0.16\linewidth} p{0.82\linewidth}}
+\textbf{Languages}       & Golang, JavaScript, Python \\
+\textbf{Backend}         & REST APIs, gRPC, Microservices, Goroutines, Channels, Worker Pools, Event-Driven Architecture, RAG, Vector Search \\
+\textbf{Testing}         & Unit, Integration, Benchmark Testing, Table-Driven Tests, \texttt{testify}, Mock Interfaces \\
+\textbf{Frameworks}      & Gin, React.js, Redux Toolkit, TailwindCSS, JWT, SSE \\
+\textbf{Databases}       & PostgreSQL, Redis, MongoDB, pgvector \\
+\textbf{Cloud \& DevOps} & Docker, GCP, CI/CD \\
+\textbf{Tools}           & Git, Postman, zerolog, pprof \\
+\end{tabular}
+
+\vspace{3pt}
+{\color{myblue}\hrule}
+
+% EDUCATION
+\section*{Education}
+\textbf{Bansal Institute of Engineering \& Technology, Lucknow} \hfill \textbf{CGPA: 7.99/10}
+
+B.Tech in Computer Science \hfill 2019 -- 2022
+
+\end{document}
