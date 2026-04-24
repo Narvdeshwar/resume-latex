@@ -1,0 +1,132 @@
+\documentclass[9pt,a4paper]{article}
+
+\usepackage[top=0.22in, bottom=0.22in, left=0.42in, right=0.42in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+\definecolor{myblue}{RGB}{0, 70, 160}
+
+\hypersetup{
+colorlinks=true,
+linkcolor=myblue,
+urlcolor=myblue,
+citecolor=myblue
+}
+
+% Section formatting aur spacing control
+\titleformat{\section}{\normalsize\bfseries\color{myblue}}{}{0em}{}
+\titlespacing*{\section}{0pt}{1pt}{2pt}
+
+% Paragraph aur list spacing settings
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\parindent}{0pt}
+
+\setlist[itemize]{leftmargin=1.1em,label=\textbullet,itemsep=0pt,topsep=0pt,parsep=0pt}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+% HEADER
+\begin{center}
+{\LARGE\textbf{NARVDESHWAR}} \\[2pt]
+{\small Frontend Engineer (React.js | Next.js | TypeScript)} \\[2pt]
+{\small
+\href{tel:8787205784}{8787205784} \textbar{}
+\href{mailto:narvdeshwar02.oct@gmail.com}{narvdeshwar02.oct@gmail.com} \textbar{}
+New Delhi, India \textbar{}
+\href{https://github.com/Narvdeshwar}{GitHub} \textbar{}
+\href{https://linkedin.com/in/narvdeshwar}{LinkedIn}
+}
+\end{center}
+
+\vspace{3pt}
+{\color{myblue}\hrule}
+
+% SUMMARY
+\section*{Summary}
+Frontend engineer with 3+ years of experience specializing in building scalable, high-performance web applications using React.js and Next.js. Expert in state management (Redux, Context API), responsive UI design (TailwindCSS), and integrating real-time data streaming (SSE, WebSockets). Proven track record of improving user productivity by 60\% through intuitive interface design and optimizing frontend performance for complex data visualization.
+
+\vspace{3pt}
+{\color{myblue}\hrule}
+
+% EXPERIENCE
+\section*{Experience}
+
+\textbf{JSPARK.AI} \hfill Noida, India
+\textit{Software Developer} \hfill Nov 2024 -- Present
+
+\begin{itemize}
+\item Architected a multi-tenant IoT monitoring SaaS dashboard using \textbf{React.js} and \textbf{Redux Toolkit}, enabling real-time telemetry visualization for smart infrastructure.
+\item Implemented \textbf{Server-Sent Events (SSE)} streaming in the frontend to provide live updates for natural language queries in a production RAG pipeline.
+\item Developed high-performance analytics dashboards for the \textbf{National Crime Records Bureau (NCRB)}, translating complex crime data into interactive visualizations for government decision-making.
+\item Optimized frontend rendering and state updates, reducing dashboard load times and ensuring smooth interactions with large datasets.
+\end{itemize}
+
+\vspace{2pt}
+
+\textbf{GlobalLogic Inc.} \hfill Gurugram, India
+\textit{Software Engineer} \hfill Dec 2022 -- Nov 2024
+
+\begin{itemize}
+\item Built a high-performance document intelligence interface using \textbf{React.js}, implementing dynamic PDF highlighting and advanced navigation features.
+\item Improved document review productivity by \textbf{60\%} through the development of intuitive UI components for rapid data extraction and validation.
+\item Integrated Google Cloud Vision OCR results into the frontend, ensuring \textbf{98\% extraction accuracy} was clearly presented and editable by users.
+\item Developed reusable UI component libraries with \textbf{TailwindCSS}, ensuring design consistency across multiple enterprise-scale projects.
+\end{itemize}
+
+\vspace{3pt}
+{\color{myblue}\hrule}
+
+% PROJECTS
+\section*{Projects}
+
+\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+\textbf{Real-time IoT Intelligence Dashboard} \href{https://github.com/Narvdeshwar/IOT-rag}{{\small\color{myblue}[GitHub]}} & \textit{Next.js, React, TailwindCSS, Redux, SSE, Chart.js}
+\end{tabular*}
+
+\begin{itemize}
+\item Designed and developed a comprehensive dashboard for visualizing IoT telemetry data, featuring live streaming updates via SSE and interactive charts.
+\item Implemented a responsive search interface for natural language querying over telemetry data, with optimized state management for streaming LLM responses.
+\item Integrated complex data visualization components, enabling users to identify patterns and anomalies in smart infrastructure telemetry.
+\end{itemize}
+
+\vspace{2pt}
+
+\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+\textbf{Interactive Document Analyzer} & \textit{React, Redux, TailwindCSS, PDF.js, OCR Integration}
+\end{tabular*}
+
+\begin{itemize}
+\item Built a web-based document analysis tool with pixel-perfect PDF rendering and dynamic text highlighting based on OCR metadata.
+\item Engineered a custom navigation system for large documents, allowing users to jump directly to extracted data points with zero lag.
+\end{itemize}
+
+\vspace{3pt}
+{\color{myblue}\hrule}
+
+% SKILLS
+\section*{Skills}
+
+\begin{tabular}{p{0.16\linewidth} p{0.82\linewidth}}
+\textbf{Frontend}        & React.js, Next.js, TypeScript, Redux Toolkit, Context API, HTML5, CSS3, TailwindCSS, Framer Motion \\
+\textbf{Languages}       & JavaScript (ES6+), TypeScript, Golang (Basic), Python \\
+\textbf{Tools}           & Webpack, Vite, Git, Postman, Figma (Design to Code), Chrome DevTools \\
+\textbf{API/Data}        & RESTful APIs, SSE, WebSockets, JSON, JWT Authentication \\
+\textbf{State/Testing}   & Redux, React Query, Jest, React Testing Library \\
+\textbf{Cloud/DevOps}    & Docker, Vercel, CI/CD Pipelines \\
+\end{tabular}
+
+\vspace{3pt}
+{\color{myblue}\hrule}
+
+% EDUCATION
+\section*{Education}
+\textbf{Bansal Institute of Engineering \& Technology, Lucknow} \hfill \textbf{CGPA: 7.99/10}
+
+B.Tech in Computer Science \hfill 2019 -- 2022
+
+\end{document}
